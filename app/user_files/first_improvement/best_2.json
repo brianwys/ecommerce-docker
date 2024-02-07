@@ -1,0 +1,17 @@
+{
+    "department_name": "Sales Operations",
+    "insight": {
+      "high_kpi_achieved_ratio": "Efficient in managing the sales pipeline, forecasting, and sales analytics.",
+      "attributes_success_to": [
+        "Well-defined sales process",
+        "Effective use of sales software",
+        "Strong collaboration between sales and marketing teams"
+      ]
+    },
+    "indicator_for_success": [
+      "Strong onboarding process",
+      "Effective sales content management"
+    ],
+    "graph_path": "user_files/Blibli/Graph/best2_sales_operation_forcast.png"
+  }
+  

@@ -1,0 +1,13 @@
+{
+    "department_name": "E-commerce Sales",
+    "insight": {
+      "low_kpi_achieved_ratio": "Struggling with poor website design, inadequate product information, or ineffective digital marketing strategies.",
+      "possible_causes": "Intense competition in the online marketplace"
+    },
+    "recommendations": [
+      "Invest in a website redesign to improve user experience and conversion rates",
+      "Develop and implement more effective digital marketing strategies to drive qualified leads to the website"
+    ],
+    "graph_path": "user_files/Blibli/Graph/worst2_ecommerce_forcast.png"
+  }
+  

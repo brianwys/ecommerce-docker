@@ -1,0 +1,440 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>HR AI Assistant</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+                        
+        <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+        <link href="{{ url_for('static', filename='css/bootstrap-icons.css') }}" rel="stylesheet">
+
+        <link href="{{ url_for('static', filename='css/templatemo-topic-listing.css') }}" rel="stylesheet">      
+
+        <link rel="icon" href="{{ url_for('static', filename='clipboard.ico') }}" type="image/x-icon">
+
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    </head>
+    
+    <body id="top">
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <span class="text-white">BliBli</span>
+                    </a>
+
+                    <div class="d-lg-none ms-auto me-4">
+                        <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
+                    </div>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-5 me-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_1">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_2">Recommendations</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_3">Reasoning</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_4">Current Job</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_5">WatsonX Job</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Extras</a>
+
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="topics-listing.html">Skill Set</a></li>
+
+                                    <li><a class="dropdown-item" href="contact.html">Revenue Prediction</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="d-none d-lg-block">
+                            <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            
+
+            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-8 col-12 mx-auto">
+                            <div class="text-center mb-5">
+                                <img src="{{ url_for('static', filename='blibli-logo.png') }}" class="custom-block-image img-fluid logo-image" alt="">
+                            </div>
+                            <!-- <h1 class="text-white text-center">BliBli</h1> -->
+
+                            <h6 class="text-center">Big choices, big deals.</h6>
+
+                            <form method="post" action="{{ url_for('process_category_form') }}" class="form-control custom-form mt-4 pt-2 mb-lg-0 mb-5" role="search">
+                                <div class="input-group input-group-lg">
+                                    <span class="input-group-text bi bi-search" id="basic-addon1"></span>
+                            
+                                    <select name="category" class="form-select" aria-label="Category">
+                                        <option value="none" {% if session.get('selected_category') == 'none' %}selected{% endif %}>Choose a department</option>
+                                        <option value="Finance" {% if session.get('selected_category') == 'Finance' %}selected{% endif %}>Finance</option>
+                                        <option value="Operations" {% if session.get('selected_category') == 'Operations' %}selected{% endif %}>Operations</option>
+                                        <option value="Sales Marketing" {% if session.get('selected_category') == 'Sales Marketing' %}selected{% endif %}>Sales Marketing</option>
+                                        <option value="Sales Platform" {% if session.get('selected_category') == 'Sales Platform' %}selected{% endif %}>Sales Platform</option>
+                                        <option value="Sales and Sales Support" {% if session.get('selected_category') == 'Sales and Sales Support' %}selected{% endif %}>Sales and Sales Support</option>
+                                        <option value="Tech" {% if session.get('selected_category') == 'Tech' %}selected{% endif %}>Tech</option>                                        
+                                    </select>
+                                    <button type="submit" class="btn-primary submit-button mt-1">Submit</button>
+                                </div>
+                            </form>
+                            
+                            <form method="post" action="{{ url_for('process_division_form') }}" class="form-control custom-form mt-4 pt-2 mb-lg-0 mb-5" role="search">
+                                <!-- <input type="hidden" name="selected_category" value="{{ selected_category }}"> -->
+                                <div class="input-group input-group-lg">
+                                    <span class="input-group-text bi bi-search" id="basic-addon2"></span>
+                            
+                                    <select name="division" class="form-select" aria-label="division" id="secondDropdown">
+                                        <option value="haha">Choose a division</option>
+                                
+                                        {% if session.get('selected_category') == "Finance" %}
+                                        <option value="Finance Director" {% if session.get('selected_division') == "Finance Director" %}selected{% endif %}>Finance Director</option>
+                                        <option value="Legal" {% if session.get('selected_division') == "Legal" %}selected{% endif %}>Legal</option>
+                                        <option value="Finance" {% if session.get('selected_division') == "Finance" %}selected{% endif %}>Finance</option>
+                                        {% elif session.get('selected_category') == "Operations" %}
+                                        <option value="Customer Management" {% if session.get('selected_division') == "Customer Management" %}selected{% endif %}>Customer Management</option>
+                                        <option value="Human Capital" {% if session.get('selected_division') == "Human Capital" %}selected{% endif %}>Human Capital</option>
+                                        <option value="Operations Excellence" {% if session.get('selected_division') == "Operations Excellence" %}selected{% endif %}>Operations Excellence</option>
+                                        <option value="Premium Care" {% if session.get('selected_division') == "Premium Care" %}selected{% endif %}>Premium Care</option>
+                                        <option value="Supply Chain" {% if session.get('selected_division') == "Supply Chain" %}selected{% endif %}>Supply Chain</option>
+                                        {% elif session.get('selected_category') == "Sales Marketing" %}
+                                            <option value="Activation">Activation</option>
+                                            <option value="Brand">Brand</option>
+                                            <option value="Campaign">Campaign</option>
+                                            <option value="Creative Designer">Creative Designer</option>
+                                            <option value="Head of Marketing">Head of Marketing</option>
+                                            <option value="Partnership">Partnership</option>
+                                            <option value="Performance">Performance</option>
+                                        {% elif session.get('selected_category') == "Sales Platform" %}
+                                            <option value="Platform Designer">Platform Designer</option>
+                                            <option value="Platform Engineer">Platform Engineer</option>
+                                            <option value="Product Manager">Product Manager</option>
+                                            <option value="Researcher">Researcher</option>
+                                        {% elif session.get('selected_category') == "Sales and Sales Support" %}
+                                            <option value="Creative Designer">Creative Designer</option>
+                                            <option value="Head of Regional Sale">Head of Regional Sales</option>
+                                            <option value="Head of Sales Excellence">Head of Sales Excellence</option>
+                                            <option value="Head of Sales Support">Head of Sales Support</option>
+                                            <option value="Head of Sales">Head of Sales</option>
+                                            <option value="Planner">Planner</option>
+                                            <option value="Promotion">Promotion</option>
+                                            <option value="Sales Admin">Sales Admin</option>
+                                            <option value="Sales Analytics">Sales Analytics</option>
+                                            <option value="Sales Community">Sales Community</option>
+                                            <option value="Sales Digital">Sales Digital</option>
+                                            <option value="Sales Director">Sales Director</option>
+                                            <option value="Sales Improvement">Sales Improvement</option>
+                                            <option value="Sales Marketplace">Sales Marketplace</option>
+                                            <option value="Sales Trading">Sales Trading</option>
+                                            <option value="Sales Trainer">Sales Trainer</option>
+                                        {% elif session.get('selected_category') == "Tech" %}
+                                            <option value="Data">Data</option>
+                                            <option value="Developer">Developer</option>
+                                            <option value="Head of Infrastructure & Technical Support">Head of Infrastructure & Technical Support</option>
+                                            <option value="Software Quality">Software Quality</option>
+                                        {% endif %}
+                                        
+                                        <!-- Add other category options as needed using -->
+                                    </select>
+                                    <button type="submit" class="btn-primary mt-1 submit-button">Submit</button>
+                                </div>
+                            </form>
+
+                            <div class="text-center mt-3">
+                                <form method="post" action="{{ url_for('reset_session') }}">
+                                    <button type="submit" class="custom-btn">Reset</button>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="featured-section">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        
+                        <div class="col-lg-6 col-12 mb-4 mb-lg-0">
+                            <div class="custom-block bg-white shadow-lg">
+                                <a href="topics-detail.html">
+                                    <div class="d-flex">
+                                        <div>
+                                            <h5 class="mb-2">Upload</h5>
+                                        
+                                            <p class="mb-0">Please upload your document here!</p>
+                                        </div>
+
+                                        <span class="badge bg-design rounded-pill ms-auto">1</span>
+                                    </div>
+                        
+                                    <!-- Upload Button -->
+                                    <div class="upload-section mb-4 mt-4 text-center">
+                                        <label for="file-upload" class="btn custom-btn mt-3 mt-lg-3">Upload Document</label>
+                                        <input type="file" id="file-upload" style="display: none;" onchange="showPreview(this)">
+                                    </div>
+
+                                    <!-- <img src="images/topics/undraw_Remote_design_team_re_urdx.png" class="custom-block-image img-fluid" alt=""> -->
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12 text-center">
+                            <h3 class="mb-4">Divisions</h3>
+                        </div>
+                        
+                        <div class="custom-block custom-block-topics-listing bg-white shadow-lg mb-5">
+                            <div class="d-flex">
+                                <img src="{{ url_for('static', filename='images/topics/recommendationimg.png') }}" class="custom-block-image img-fluid" alt="">
+
+                                <div class="custom-block-topics-listing-info d-flex">
+                                    <div>
+                                        <h5 class="mb-2">Recommendations</h5>
+
+                                    {% if recommendations %}
+                                        {% if recommendations|length==1 %}
+                                            {% set recommendations = recommendations|replace('[', '')|replace(']', '')|replace("'",'') %}
+                                            <p class="mb-0">{{ recommendations }}</p>
+                                        {% else %}
+                                            <p class="mb-0">
+                                                <ul>
+                                                    {% for recommend in recommendations %}
+                                                        <li>{{ loop.index }}. {{ recommend }}</li>                                        
+                                                    {% endfor %}
+                                                </ul>
+                                            </p>
+                                        {% endif %}
+                                    {% else %}
+                                        <i class="bi bi-exclamation-triangle-fill text-warning fs-3"></i>
+                                        <p class="mb-0">Explanation currently unavailable. Please select a department and then choose a division within the department to receive the explanation.
+                                        </p>
+                                    {% endif %}
+                                    </div>
+
+                                    <span class="badge bg-rec rounded-pill ms-auto">2</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="custom-block custom-block-topics-listing bg-white shadow-lg mb-5">
+                            <div class="d-flex">
+                                <img src="{{ url_for('static', filename='images/topics/undraw_Podcast_audience_re_4i5q.png') }}" class="custom-block-image img-fluid" alt="">
+
+                                <div class="custom-block-topics-listing-info d-flex">
+                                    <div>
+                                        <h5 class="mb-2">Reasoning</h5>
+                                        {% if reasoning %}
+                                            <p class="mb-0">{{ reasoning }}</p>
+                                        {% elif recommendations %}
+                                        <i class="bi bi-exclamation-triangle-fill text-warning fs-3"></i>
+                                        <p class="mb-0">This department has been suggest to be merge.</p>
+                                        {% else %}
+                                            <i class="bi bi-exclamation-triangle-fill text-warning fs-3"></i>
+                                            <p class="mb-0">Explanation currently unavailable. Please select a department and then choose a division within the department to receive the explanation.</p>
+                                        {% endif %}
+                                         
+                                    </div>
+
+                                    <span class="badge bg-music rounded-pill ms-auto">3</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 col-12 mt-3 mx-auto">
+                            <div class="custom-block custom-block-topics-listing bg-white shadow-lg mb-5">
+                                <div class="d-flex">
+                                    <img src="{{ url_for('static', filename='images/topics/undraw_Remote_design_team_re_urdx.png') }}" class="custom-block-image img-fluid" alt="">
+
+                                    <div class="custom-block-topics-listing-info d-flex">
+                                        <div>
+                                            <h5 class="mb-2">Current Job Responsibilities</h5>
+
+                                            {% if asis_job %}
+                                                <ul>
+                                                    {% for job in asis_job %}
+                                                    <li>{{ loop.index }}. {{ job }}</li>
+                                                    {% endfor %}
+                                                </ul>
+                                            {% else %}
+                                                <i class="bi bi-exclamation-triangle-fill text-warning fs-3"></i>
+                                                <p class="mb-0">Explanation currently unavailable. Please select a department and then choose a division within the department to receive the explanation.
+                                                </p>
+                                            {% endif %}
+                                        </div>
+
+                                        <span class="badge bg-design rounded-pill ms-auto">4</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="custom-block custom-block-topics-listing bg-white shadow-lg mb-5">
+                                <div class="d-flex">
+                                    <img src="{{ url_for('static', filename='images/topics/undraw_online_ad_re_ol62.png') }}" class="custom-block-image img-fluid" alt="">
+
+                                    <div class="custom-block-topics-listing-info d-flex">
+                                        <div>
+                                            <h5 class="mb-2">Job Responsibilities by WatsonX</h5>
+                                            
+                                            {% if recommend_job %}
+                                                <p class="mb-0">
+                                                    <ul>
+                                                        {% for job in recommend_job %}
+                                                        <li>{{ loop.index }}. {{ job }}</li>
+                                                        {% endfor %}
+                                                    </ul>
+                                                </p>
+                                            {% elif recommendations %}
+                                            <i class="bi bi-exclamation-triangle-fill text-warning fs-3"></i>
+                                            <p class="mb-0">This department has been suggest to be merge.</p>
+                                            {% else %}
+                                                <i class="bi bi-exclamation-triangle-fill text-warning fs-3"></i>
+                                                <p class="mb-0">Explanation currently unavailable. Please select a department and then choose a division within the department to receive the explanation.
+                                                </p>
+                                            {% endif %}
+
+        
+                                        </div>
+
+                                        <span class="badge bg-advertising rounded-pill ms-auto">5</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+
+                            <div class="custom-block custom-block-topics-listing bg-white shadow-lg mb-5">
+                                <div class="d-flex">
+                                    <img src="{{ url_for('static', filename='images/topics/skill.png') }}" class="custom-block-image img-fluid" alt="">
+
+                                    <div class="custom-block-topics-listing-info d-flex">
+                                        <div>
+                                            <h5 class="mb-2">Skill Set Requirements</h5>
+                                            
+                                            {% if skill_map %}
+                                                <p class="mb-0">
+                                                    <ul>
+                                                        {% for category in skill_map %}
+                                                            <li>{{ category }}</li>
+                                                        {% endfor %}
+                                                    </ul>
+                                                </p>
+                                            {% elif recommendations %}
+                                                <i class="bi bi-exclamation-triangle-fill text-warning fs-3"></i>
+                                                <p class="mb-0">This department has been suggest to be merge.</p>
+                                            {% else %}
+                                                <i class="bi bi-exclamation-triangle-fill text-warning fs-3 fs-3"></i>
+                                                <p class="mb-0">Explanation currently unavailable. Please select a department and then choose a division within the department to receive the explanation.
+                                                </p>
+                                            {% endif %}
+                                            
+                                        </div>
+
+                                        <span class="badge bg-skill rounded-pill ms-auto">6</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="custom-block custom-block-topics-listing bg-white shadow-lg mb-5">
+                                <div class="d-flex">
+                                    <!-- <div id="chart" class="custom-block custom-block-topics-listing bg-white shadow-lg mb-5"> -->
+                                        <!-- {{ graphJSON }} -->
+                                        <!-- The graph will be inserted here -->
+                                    <!-- </div> -->
+                                    <div>
+                                        <img src="{{ url_for('static', filename='plot.png') }}" alt="Plot Image" class="scaled-image">
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script type="text/javascript">
+
+            var graphJSON = JSON.parse('{{ graphJSON | safe | tojson | safe }}');
+
+
+            // here is where the JSON gets plugged in via JS
+            // var graph = JSON.parse('{{ graphJSON | safe }}');
+    
+            // you target the graph div id in the first arg, 
+            // put your graph in the second, and set the third as {}
+            Plotly.plot('chart', graphJSON, {});
+    
+        </script>
+
+        <script>
+            // var graphJSON = JSON.parse('{{ graphJSON | safe }}');
+            // Plotly.newPlot('chart', graphJSON.data, graphJSON.layout);
+        
+            // Render the graph in the specified div
+            // Plotly.newPlot('chart', graphJSON.data, graphJSON.layout);
+            // var chartImg = Plotly.toImage('chart', {format: 'png'});
+            // var imgElement = document.createElement('img');
+            // imgElement.src = 'data:image/png;base64,' + chartImg;
+            // imgElement.alt = "Legal Revenue Chart";
+            // document.getElementById('chart-image').appendChild(imgElement);
+
+        //     document.addEventListener('DOMContentLoaded', function() {
+        //     var graphJSON = JSON.parse('{{ graphJSON | safe }}');
+        //     Plotly.newPlot('chart', graphJSON.data, graphJSON.layout);
+        //     });
+        // </script>
+        
+        <!-- JAVASCRIPT FILES -->
+        <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/jquery.sticky.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/click-scroll.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+
+    </body>
+</html>

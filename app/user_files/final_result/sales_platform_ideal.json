@@ -1,0 +1,68 @@
+{
+  "departments": [
+    {
+      "name": "Creative Designer",
+      "recommended_job_responsibilities": [
+        "Develop and maintain visual identity, including logos and branding.",
+        "Implement design standards and guidelines for visual content.",
+        "Collaborate with Marketing teams for consistent branding.",
+        "Create visual assets for website, social media, and campaigns.",
+        "Conduct market research to stay updated on industry trends.",
+        "Provide training and support on design software and techniques.",
+        "Manage and prioritize multiple projects for timely delivery."
+      ]
+    },
+    {
+      "name": "Head of Regional Sales",
+      "recommended_job_responsibilities": [
+        "Lead and manage regional sales teams to achieve targets.",
+        "Develop sales strategies for revenue and profitability.",
+        "Conduct market research to identify growth opportunities.",
+        "Collaborate with category teams for aligned strategies.",
+        "Manage relationships with key partners and stakeholders.",
+        "Analyze sales data for performance improvement.",
+        "Provide training to enhance sales teams' skills."
+      ]
+    },
+    {
+      "name": "Sales Admin",
+      "recommended_job_responsibilities": [
+        "Manage and coordinate administrative tasks for sales.",
+        "Ensure accurate and timely onboarding of merchant partners.",
+        "Provide support and training to improve sales experience.",
+        "Maintain accurate records of sales data and performance.",
+        "Assist in developing and implementing sales processes.",
+        "Provide administrative support to other teams as needed."
+      ]
+    },
+    {
+      "name": "Sales Digital",
+      "recommended_job_responsibilities": [
+        "Develop and implement digital marketing strategies.",
+        "Optimize website content, SEO, and ads for improved performance.",
+        "Analyze and report on website and social media metrics.",
+        "Collaborate with other teams for consistent branding.",
+        "Stay updated on industry trends in digital marketing.",
+        "Provide training and support on digital marketing tools."
+      ]
+    },
+    {
+      "name": "Sales Trainer",
+      "recommended_job_responsibilities": [
+        "Develop and implement training programs for sales teams.",
+        "Conduct training sessions to improve performance and customer service.",
+        "Collaborate with other teams for consistent messaging and branding.",
+        "Evaluate and improve training processes and materials.",
+        "Provide coaching and support to enhance sales teams' performance.",
+        "Analyze sales data for insights to improve strategies."
+      ]
+    }
+  ],
+  "recommendation": [
+    "Platform Designer: Ensure a cohesive modern aesthetic and clean look/feel in all design elements affecting our products while ensuring their brand attributes are consistently represented.",
+    "Platform Engineer: Design and develop user interfaces that enhance the overall user experience.",
+    "Product Manager: Acts as the subject matter expert of the product and gather user/customers feedback to deeply understand their needs.",
+    "Researcher: Observe and analyze user behavior to provide actionable insights to help develop Blibli's customer experience.",
+    "UX Researcher: Conduct generative and foundational user research that will serve as the basis for new ideas and concepts, product roadmap, discovery, and initiative backlog to develop product and feature improvements."
+  ]
+}

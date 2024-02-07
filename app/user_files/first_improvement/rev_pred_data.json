@@ -1,0 +1,28 @@
+pred_data = {
+    "revenue_prediction": [
+      {
+        "Retail Sales": "102784.99",
+        "Sales Administration": "24678.92",
+        "Account Management": "52845.89",
+        "Business Development": "54250.89",
+        "Channel Sales": "25000.00",
+        "Customer Success": "55642.89",
+        "E-commerce Sales": "75000",
+        "Enterprise Sales": "59878.92",
+        "Inside Sales": "72342.89",
+        "International Sales": "58924.87",
+        "Key Accounts": "78234.52",
+        "Outside Sales": "68421.32",
+        "Retail Sales": "69544.89",
+        "Sales Administration": "24678.92",
+        "Sales Analytics": "78943.89",
+        "Sales Enablement": "23542.15",
+        "Sales Engineering": "24567.89",
+        "Sales Operations": "65425.89",
+        "Sales Support": "98745.26",
+        "Sales Training": "89421.25",
+        "Strategic Partnerships": "85000"
+      }
+    ]
+  }
+  

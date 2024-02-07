@@ -1,0 +1,17 @@
+{
+    "department_name": "Sales Enablement",
+    "insight": {
+      "high_kpi_achieved_ratio": "Successful in providing necessary tools, resources, and training to close deals effectively.",
+      "attributes_success_to": [
+        "Strong onboarding process",
+        "Regular training sessions",
+        "Effective sales content management"
+      ]
+    },
+    "indicator_for_success": [
+      "Strong onboarding process",
+      "Effective sales content management"
+    ],
+    "graph_path": "user_files/Blibli/Graph/best1_sales_enablement_forcast.png"
+  }
+  

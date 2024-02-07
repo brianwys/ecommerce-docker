@@ -1,0 +1,7 @@
+Department,Region,Revenue,Revenue Goal,Margin,Margin Goal,Sales Quantity,Customers,YearMonth,KPi Achieved,Revenue Predictions,Pred Achieve
+Outside Sales,NTB,6534.0,26574.77,0.31,0.2,57,113,2017-01,YES,37082.0140348022,YES
+Outside Sales,Papua,9353.76,26574.77,0.12,0.18,74,414,2017-02,YES,37082.0140348022,YES
+Outside Sales,Sumatra,2737.51,26574.77,0.12,0.2,22,85,2017-02,NO,37082.0140348022,YES
+Outside Sales,Bali,195.87,26574.77,0.26,0.22,3,11,2017-02,NO,37082.0140348022,YES
+Outside Sales,Sulawesi,1585.3,26574.77,0.25,0.23,14,74,2017-02,NO,37082.0140348022,YES
+Outside Sales,Kalimantan,4403.3,26574.77,0.15,0.22,39,98,2017-02,NO,37082.0140348022,YES

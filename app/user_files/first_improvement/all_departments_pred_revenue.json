@@ -1,0 +1,78 @@
+{
+  "Retail Sales": {
+    "Revenue_diff": 2148.61,
+    "Percentage Change": "3.19%"
+  },
+  "Sales Administration": {
+    "Revenue_diff": 3088.81,
+    "Percentage Change": "14.3%"
+  },
+  "Account Management": {
+    "Revenue_diff": -11953.75,
+    "Percentage Change": "-18.5%"
+  },
+  "Business Development": {
+    "Revenue_diff": -7700.06,
+    "Percentage Change": "-12.5%"
+  },
+  "Channel Sales": {
+    "Revenue_diff": -2661.48,
+    "Percentage Change": "-9.6%"
+  },
+  "Customer Success": {
+    "Revenue_diff": -3346.08,
+    "Percentage Change": "-5.7%"
+  },
+  "E-commerce Sales": {
+    "Revenue_diff": -2430.95,
+    "Percentage Change": "-3.2%"
+  },
+  "Enterprise Sales": {
+    "Revenue_diff": 2298.48,
+    "Percentage Change": "4.0%"
+  },
+  "Inside Sales": {
+    "Revenue_diff": -12573.15,
+    "Percentage Change": "-14.8%"
+  },
+  "International Sales": {
+    "Revenue_diff": 5509.35,
+    "Percentage Change": "10.3%"
+  },
+  "Key Accounts": {
+    "Revenue_diff": 2994.56,
+    "Percentage Change": "4.0%"
+  },
+  "Outside Sales": {
+    "Revenue_diff": 1111.13,
+    "Percentage Change": "1.7%"
+  },
+  "Sales Analytics": {
+    "Revenue_diff": 4664.97,
+    "Percentage Change": "6.3%"
+  },
+  "Sales Enablement": {
+    "Revenue_diff": 2214.83,
+    "Percentage Change": "10.4%"
+  },
+  "Sales Engineering": {
+    "Revenue_diff": 1114.93,
+    "Percentage Change": "4.8%"
+  },
+  "Sales Operations": {
+    "Revenue_diff": 2244.31,
+    "Percentage Change": "3.5%"
+  },
+  "Sales Support": {
+    "Revenue_diff": 1111.78,
+    "Percentage Change": "1.1%"
+  },
+  "Sales Training": {
+    "Revenue_diff": 2288.83,
+    "Percentage Change": "2.6%"
+  },
+  "Strategic Partnerships": {
+    "Revenue_diff": 2009.95,
+    "Percentage Change": "2.4%"
+  }
+}

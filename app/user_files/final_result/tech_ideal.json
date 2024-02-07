@@ -1,0 +1,68 @@
+{
+    "departments": [
+      {
+        "name": "Data",
+        "recommendedJobResponsibilities": [
+          "Develop and maintain predictive models to solve business problems or requirements in e-commerce and digital marketing domains.",
+          "Work with cross-functional teams to identify, analyze, and interpret trends or patterns in complex data sets.",
+          "Build and maintain machine learning models to improve the accuracy of predictions and recommendations.",
+          "Communicate insights and recommendations to stakeholders through clear and concise visualizations.",
+          "Collaborate with software development teams to integrate predictive models into production systems.",
+          "Stay up-to-date with the latest technology trends and best practices in data science and machine learning."
+        ],
+        "reasoning": "To differentiate from the Software Quality department, the Data department should focus more on predictive modeling and data science."
+      },
+      {
+        "name": "Developer",
+        "recommendedJobResponsibilities": [
+          "Design, develop, and maintain software applications and systems.",
+          "Collaborate with cross-functional teams to identify and prioritize project requirements.",
+          "Write clean, efficient, and well-documented code.",
+          "Participate in code reviews and provide constructive feedback to peers.",
+          "Stay up-to-date with the latest technology trends and best practices in software development.",
+          "Mentor junior team members and provide guidance on software development principles and practices."
+        ],
+        "reasoning": "To differentiate from the Head of Infrastructure & Technical Support department, the Developer department should focus more on application development."
+      },
+      {
+        "name": "Head of Infrastructure & Technical Support",
+        "recommendedJobResponsibilities": [
+          "Design, implement, and maintain IT infrastructure and services.",
+          "Collaborate with cross-functional teams to identify and prioritize infrastructure and technical support needs.",
+          "Ensure the smooth operation of IT systems and services.",
+          "Troubleshoot and resolve technical issues promptly and efficiently.",
+          "Stay up-to-date with the latest technology trends and best practices in infrastructure and technical support.",
+          "Lead and manage a team of IT professionals to achieve department goals and objectives."
+        ],
+        "reasoning": "To differentiate from the Software Quality department, the Head of Infrastructure & Technical Support department should focus more on infrastructure management and technical support."
+      },
+      {
+        "name": "Software Quality",
+        "recommendedJobResponsibilities": [
+          "Develop and execute test plans to ensure software quality and reliability.",
+          "Identify, report, and track defects and bugs.",
+          "Collaborate with software development teams to resolve issues and improve software quality.",
+          "Conduct usability testing and provide feedback on user experience.",
+          "Stay up-to-date with the latest technology trends and best practices in software testing and quality assurance.",
+          "Participate in code reviews and provide constructive feedback to peers."
+        ],
+        "reasoning": "To differentiate from the Data department, the Software Quality department should focus more on testing and quality assurance."
+      },
+      {
+        "name": "All",
+        "recommendedJobResponsibilities": [
+          "Collaborate with cross-functional teams to achieve business goals and objectives.",
+          "Stay up-to-date with the latest technology trends and best practices in their respective fields.",
+          "Participate in code reviews and provide constructive feedback to peers.",
+          "Mentor junior team members and provide guidance on software development principles and practices.",
+          "Lead and manage a team of professionals to achieve department goals and objectives."
+        ],
+        "reasoning": "Each department should focus on their specific areas of expertise and responsibilities."
+      }
+    ],
+    "recommendation": [
+      "Merge the Developer and Head of Infrastructure & Technical Support departments to create a more streamlined and efficient organization, focusing on both application development and infrastructure management.",
+      "Reduce the responsibilities of the Software Quality department as its responsibilities are covered by the Data and Developer departments."
+  ]
+  }
+  

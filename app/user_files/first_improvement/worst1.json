@@ -1,0 +1,16 @@
+{
+    "department_name": "Retail Sales",
+    "insight": {
+      "low_kpi_achieved_ratio": "Facing challenges in converting foot traffic into sales.",
+      "possible_causes": [
+        "Inadequate training for retail staff",
+        "Poor product display",
+        "Ineffective promotions and discounts"
+      ]
+    },
+    "recommendations": [
+      "Implement a comprehensive training program for retail staff to improve sales skills and product knowledge"
+    ],
+    "graph_path": "user_files/Blibli/Graph/worst1_retail_sales_forcast.png"
+  }
+  

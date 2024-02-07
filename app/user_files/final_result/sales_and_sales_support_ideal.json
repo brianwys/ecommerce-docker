@@ -1,0 +1,115 @@
+{
+    "departments": [
+      {
+        "name": "Creative Designer",
+        "recommendedJobResponsibilities": [
+          "Develop visual content aligning with the category's look and feel.",
+          "Stay updated on market trends for improved visual communication.",
+          "Coordinate with Content & Promotion teams to align visual communication with Work Order.",
+          "Collaborate with various teams for impactful promotions.",
+          "Evaluate and improve work processes regularly.",
+          "Establish action plans for efficient task completion.",
+          "Report job progress regularly."
+        ],
+        "modifiedJobResponsibilities": [
+          "Design and maintain visual identity of the company, including logos, icons, and branding.",
+          "Develop and implement design standards and guidelines for all visual content.",
+          "Collaborate with Marketing teams to ensure consistent branding across all channels.",
+          "Create and manage visual assets for website, social media, and marketing campaigns.",
+          "Conduct market research to stay updated on industry trends and best practices.",
+          "Provide training and support to team members on design software and techniques.",
+          "Manage and prioritize multiple projects simultaneously, ensuring timely delivery."
+        ],
+        "reasoning": "To differentiate from the Promotion department, Creative Designer should focus on visual identity and branding."
+      },
+      {
+        "name": "Head of Regional Sale",
+        "recommendedJobResponsibilities": [
+          "Develop guidance for ecommerce goals, quality, mix margin, and price.",
+          "Identify opportunities for revenue growth and collaborate with category teams.",
+          "Develop sales strategy in coordination with category teams.",
+          "Collaborate with various teams for new seller initiatives and promotions.",
+          "Work on special promotions and campaigns.",
+          "Collaborate with Marketing teams for performance ads."
+        ],
+        "modifiedJobResponsibilities": [
+          "Lead and manage regional sales teams to achieve sales targets.",
+          "Develop and implement sales strategies to maximize revenue and profitability.",
+          "Conduct market research to identify opportunities for growth and optimize sales tactics.",
+          "Collaborate with category teams to ensure sales strategies align with business objectives.",
+          "Manage relationships with key partners and stakeholders.",
+          "Analyze sales data and provide insights to improve sales performance.",
+          "Provide training and support to sales teams to enhance their skills and knowledge."
+        ],
+        "reasoning": "To differentiate from the Sales Director, Head of Regional Sales should focus on managing and leading sales teams."
+      },
+      {
+        "name": "Sales Admin",
+        "recommendedJobResponsibilities": [
+          "Ensure accurate administrative and onboarding processes.",
+          "Monitor and assist in product upload for merchant partners.",
+          "Handle purchase order administration.",
+          "Analyze and investigate issues from merchant partners.",
+          "Take prompt action to achieve work goals.",
+          "Do all tasks assigned by the superior."
+        ],
+        "modifiedJobResponsibilities": [
+          "Manage and coordinate administrative tasks and processes for the sales team.",
+          "Ensure accurate and timely onboarding of new merchant partners.",
+          "Provide support and training to merchant partners on product upload and management.",
+          "Collaborate with other teams to resolve issues and improve overall sales experience.",
+          "Maintain accurate records and reports of sales data and performance.",
+          "Assist in the development and implementation of sales processes and procedures.",
+          "Provide administrative support to other teams as needed."
+        ],
+        "reasoning": "To differentiate from the Sales Support department, Sales Admin should focus on managing administrative tasks and onboarding."
+      },
+      {
+        "name": "Sales Digital",
+        "recommendedJobResponsibilities": [
+          "Manage website Seller Center and track website performance.",
+          "Create and update website content, manage SEO and ads performance.",
+          "Compile and analyze social media metrics.",
+          "Maintain social media strategy and planning.",
+          "Create video content for social media.",
+          "Stay updated on social marketing trends."
+        ],
+        "modifiedJobResponsibilities": [
+          "Develop and implement digital marketing strategies to maximize website and social media performance.",
+          "Manage and optimize website content, SEO, and ads to improve user experience and drive sales.",
+          "Analyze and report on website and social media metrics to inform marketing strategies.",
+          "Collaborate with other teams to ensure consistent branding and messaging across all channels.",
+          "Stay updated on industry trends and best practices in digital marketing.",
+          "Provide training and support to team members on digital marketing tools and techniques.",
+          "Manage and prioritize multiple projects simultaneously, ensuring timely delivery."
+        ],
+        "reasoning": "To differentiate from the Promotion department, Sales Digital should focus on digital marketing strategies and website optimization."
+      },
+      {
+        "name": "Sales Trainer",
+        "recommendedJobResponsibilities": [
+          "Execute administrative training activities based on SLA.",
+          "Maintain merchant experience during onboarding.",
+          "Evaluate and improve work processes.",
+          "Report work implementation based on needs.",
+          "Responsible for tasks assigned by the superior."
+        ],
+        "modifiedJobResponsibilities": [
+          "Develop and implement training programs to enhance skills and knowledge of sales teams.",
+          "Conduct training sessions and workshops to improve sales performance and customer service.",
+          "Collaborate with other teams to ensure consistent messaging and branding across all channels.",
+          "Evaluate and improve training processes and materials regularly.",
+          "Provide coaching and support to sales teams to enhance their performance.",
+          "Analyze sales data and provide insights to improve sales strategies.",
+          "Manage and prioritize multiple projects simultaneously, ensuring timely delivery."
+        ],
+        "reasoning": "To differentiate from the Sales Director, Sales Trainer should focus on developing and implementing training programs."
+      }
+    ],
+    "recommendation": [
+      "Merge the Sales Admin and Sales Support departments to create a more streamlined approach, focusing on providing administrative support, training, and issue resolution to merchant partners.",
+      "Reduce the Sales Digital department as its responsibilities can be absorbed by the Promotion department, which focuses on digital marketing strategies and website optimization.",
+      "Reduce the Sales Trainer department as its responsibilities can be absorbed by the Sales Director, who can focus on training and support to sales teams, as well as optimizing sales processes and conducting market research."
+  ]
+  }
+  

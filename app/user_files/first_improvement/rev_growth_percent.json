@@ -1,0 +1,116 @@
+{
+  "Retail Sales": {
+    "start": 69544.89,
+    "end": 67396.28,
+    "change": 2148.61,
+    "percentage": 3.19
+  },
+  "Sales Administration": {
+    "start": 24678.92,
+    "end": 21590.11,
+    "change": 3088.81,
+    "percentage": 14.3
+  },
+  "Account Management": {
+    "start": 52845.89,
+    "end": 64799.64,
+    "change": -11953.75,
+    "percentage": -18.5
+  },
+  "Business Development": {
+    "start": 54250.89,
+    "end": 61950.15,
+    "change": -7700.06,
+    "percentage": -12.5
+  },
+  "Channel Sales": {
+    "start": 25000.00,
+    "end": 27661.48,
+    "change": -2661.48,
+    "percentage": -9.6
+  },
+  "Customer Success": {
+    "start": 55642.89,
+    "end": 58988.97,
+    "change": -3346.08,
+    "percentage": -5.7
+  },
+  "E-commerce Sales": {
+    "start": 75000,
+    "end": 77430.95,
+    "change": -2430.95,
+    "percentage": -3.2
+  },
+  "Enterprise Sales": {
+    "start": 59878.92,
+    "end": 57580.44,
+    "change": 2298.48,
+    "percentage": 4.0
+  },
+  "Inside Sales": {
+    "start": 72342.89,
+    "end": 84916.04,
+    "change": -12573.15,
+    "percentage": -14.8
+  },
+  "International Sales": {
+    "start": 58924.87,
+    "end": 53415.52,
+    "change": 5509.35,
+    "percentage": 10.3
+  },
+  "Key Accounts": {
+    "start": 78234.52,
+    "end": 75239.96,
+    "change": 2994.56,
+    "percentage": 4.0
+  },
+  "Outside Sales": {
+    "start": 68421.32,
+    "end": 67310.19,
+    "change": 1111.13,
+    "percentage": 1.7
+  },
+  "Sales Analytics": {
+    "start": 78943.89,
+    "end": 74278.92,
+    "change": 4664.97,
+    "percentage": 6.3
+  },
+  "Sales Enablement": {
+    "start": 23542.15,
+    "end": 21327.32,
+    "change": 2214.83,
+    "percentage": 10.4
+  },
+  "Sales Engineering": {
+    "start": 24567.89,
+    "end": 23452.96,
+    "change": 1114.93,
+    "percentage": 4.8
+  },
+  "Sales Operations": {
+    "start": 65425.89,
+    "end": 63181.58,
+    "change": 2244.31,
+    "percentage": 3.5
+  },
+  "Sales Support": {
+    "start": 98745.26,
+    "end": 97633.48,
+    "change": 1111.78,
+    "percentage": 1.1
+  },
+  "Sales Training": {
+    "start": 89421.25,
+    "end": 87132.42,
+    "change": 2288.83,
+    "percentage": 2.6
+  },
+  "Strategic Partnerships": {
+    "start": 85000,
+    "end": 82990.05,
+    "change": 2009.95,
+    "percentage": 2.4
+  }
+}
